@@ -4,7 +4,24 @@
     <meta charset="UTF-8">
     <title>仙玉奖励计算器</title>
     <style>
-        body {
+            /* 新增广告位样式 */
+        .ad-container {
+            background: #f8f9fa;
+            border: 2px dashed #3498db;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px 0;
+            min-height: 100px;
+            color: #666;
+            transition: all 0.3s;
+        }
+        .ad-container:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+        } 
+         
+         body {
             font-family: 'Microsoft YaHei', sans-serif;
             max-width: 800px;
             margin: 20px auto;
@@ -86,8 +103,14 @@
 </head>
 <body>
     <div class="calculator">
-        <h2>关卡仙玉计算器</h2>
+        <h2>28关卡仙玉计算器</h2>
         
+        <div class="ad-container">
+            <h3>广告位招租</h3>
+            <p>联系vx：Ajiujiu81A</p>
+            <p>尺寸：800x100px</p>
+        </div>
+
         <div class="input-group">
             <label for="start">起始关卡：</label>
             <input type="number" id="start" min="1" step="1" placeholder="开始关卡">
